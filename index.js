@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 
 var Marked = require('marked')
 var highlight = require('./highlight')
