@@ -27,7 +27,7 @@ html('  <head>')
 html('   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">')
 if(opts.script) {
   html('    <script>')
-  log(fs.readFileSync(opts.script)
+  log(fs.readFileSync(opts.script, 'utf8'))
   html('    </script>')
 }
 if(opts.css) {
