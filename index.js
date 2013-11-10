@@ -25,6 +25,11 @@ html('<!doctype html>')
 html('  <html>')
 html('  <head>')
 html('   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">')
+if(opts.script) {
+  html('    <script>')
+  log(fs.readFileSync(opts.script)
+  html('    </script>')
+}
 if(opts.css) {
   html('  <style>')
   log(fs.readFileSync(__dirname + '/styles/gh.css', 'utf8'))
